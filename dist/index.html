@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Library</title>
+</head>
+<body>
+    <div class="container">
+        <h1>UI Library</h1>
+        <!-- Tooltip -->
+        <h2>Tooltips</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, doloremque! <span data-tooltip="Some cool tooltip message goes here">Aliquam consequuntur</span> nisi velit architecto praesentium nihil, culpa itaque. Recusandae pariatur debitis <span data-tooltip="Another tooltip but bottom aligned" data-tooltip-position="bottom">voluptates</span> voluptate ex numquam maiores totam magni tenetur.</p>
+        <!-- Dropdown -->
+        <h2>Dropdowns</h2>
+        <div class="accordion">
+            <div class="accordion__item">
+                <h3><button>Some catchy title here</button></h3>
+                <div class="accordion__item__content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima dignissimos nulla vero qui, dolor aliquid sunt illum obcaecati quo autem harum accusamus, aliquam mollitia cum magni numquam, perspiciatis aut architecto!</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3><button>Another catchy title here</button></h3>
+                <div class="accordion__item__content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima dignissimos nulla vero qui, dolor aliquid sunt illum obcaecati quo autem harum accusamus, aliquam mollitia cum magni numquam, perspiciatis aut architecto!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam animi sed pariatur magni praesentium unde quidem rem. Hic, voluptatum consequatur nostrum quia illum error exercitationem eligendi atque accusantium adipisci neque.</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <h3><button>Yet another catchy title here</button></h3>
+                <div class="accordion__item__content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima dignissimos nulla vero qui, dolor aliquid sunt illum obcaecati quo autem harum accusamus, aliquam mollitia cum magni numquam, perspiciatis aut architecto!</p>
+                </div>
+            </div>
+        </div>
+        <!-- Tabs -->
+        <div class="tabs">
+            <ul>
+                <li><button class="active" data-target="#about">About</button></li>
+                <li><button data-target="#delivery">Delivery info</button></li>
+                <li><button data-target="#returns">Returns info</button></li>
+            </ul>
+            <div class="content active" id="about">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique fuga ut ab temporibus minima, voluptatibus nobis earum quae accusantium delectus at consectetur voluptatem? Sed eveniet nesciunt maxime odit aut.</p>
+            </div>
+            <div class="content" id="delivery">
+                <h3>Delivery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente fuga sequi magni non quia! Tempora, nesciunt labore laudantium illo quos commodi a ullam tenetur tempore! Ipsum consequuntur dignissimos repellat mollitia.</p>
+            </div>
+            <div class="content" id="returns">
+                <h3>Returns</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet obcaecati et debitis excepturi corrupti deserunt aperiam animi quaerat quidem ratione, rem quae saepe? Asperiores ducimus, at rem eius vel eligendi!</p>
+            </div>
+        </div>
+        <!-- Notification -->
+        <h2>Notifications</h2>
+        <button id="notify">Send notification</button>
+    </div>
+    <script src="./assets/bundle.js"></script>
+</body>
+</html>

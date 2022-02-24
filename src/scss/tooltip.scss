@@ -1,0 +1,51 @@
+[data-tooltip] {
+    position: relative;
+    display: inline-block;
+    color: tomato;
+    border-bottom: 1px dotted tomato;
+    cursor: help;
+
+    .tooltip {
+        position: absolute;
+        bottom: calc(100% + 10px);
+        left: calc(50% - 75px);
+        visibility: hidden;
+        opacity: 0;
+        width: 150px;
+        background-color: tomato;
+        color: white;
+        border-radius: 7px;
+        padding: 5px;
+        text-align: center;
+        transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+
+        &:after {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            content: '';
+            width: 0; 
+            height: 0;
+            margin-left: -7px;
+            border: 7px solid transparent;
+            border-top: 7px solid tomato;
+        }
+
+        &--active {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        &--bottom {
+            top: calc(100% + 10px);
+            bottom: unset;
+            &:after {
+                bottom: 100%;
+                top: unset;
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid tomato;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.accordion {
+    margin: 0 0 30px 0;
+    &__item {
+        h3 {
+            border-bottom: 1px solid tomato;
+            padding: 5px 0;
+            margin: 5px 0;
+            display: flex;
+            font-weight: normal;
+            justify-content: space-between;
+            button {
+                background: none;
+                border: none;
+                padding: 0;
+                font: inherit;
+                cursor: pointer;
+                flex: 1 0 auto;
+                text-align: left;
+            }
+            &:after {
+                content: '>';
+                display: inline-block;
+                transform: rotate(90deg);
+                padding: 5px;
+                transition: transform 0.3s ease;
+            }
+        }
+        &__content {
+            display: none;
+        }
+        &--active {
+            h3 {
+                &:after {
+                    transform: rotate(-90deg);
+                    transition: transform 0.3s ease;
+                }
+            }
+            .accordion__item__content {
+                display: block;
+            }
+        }
+    }
+}
